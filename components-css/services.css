@@ -1,0 +1,65 @@
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.service-card {
+    flex: 1 auto;
+    position: relative;
+    max-width: 300px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.service-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.service-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+}
+
+.service-text p {
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.service-text img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%);
+    z-index: 2;
+}
+

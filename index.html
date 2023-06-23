@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="./components-css/footer.css" />
     <link rel="stylesheet" href="./components-css/header.css" />
+    <link rel="stylesheet" href="./components-css/services.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
@@ -27,9 +28,10 @@
   <body>
     <script defer src="./javascript/navbar.js"> </script>
     <header>
+          <!-- Head Navbar Styles -->
       <nav class="navbar">
         <div class="logo-container">
-          <img src="logo.png" class="logo" alt="Company Logo" />
+          <img src="logo.png" class="logo" alt="Company Logo"/>
         </div>
         <ul class="nav-links">
           <span class="close">&times;</span>
@@ -47,7 +49,87 @@
     </header>
 
     <main class="page-container" class="page-wrap" >
+
       <!-- Main content of the page -->
+      <section class="about-us">
+        <h2>About us</h2>
+        <p>At our company, we are passionate about delivering exceptional graphic design services tailored to meet 
+            the unique needs of businesses across various industries. With a team of talented and experienced designers, we understand 
+            the power of visual communication and its ability to capture attention and resonate with the target audience.</p>
+        <button>Need a Quote?</button>
+      </section>
+
+      <section class="portfolio">
+       <h2>Our work speaks volumes</h2>
+
+        <div id="portfolio-pieces">
+            <article>
+                <img src="" alt="">
+                <h3 href="https://generatordesign.com/otw_pm_portfolio/actuarial-solutions-inc-website/">Actuarial Solutions Inc. Website</h3>
+                <p></p>
+                <button>see more <img src="" alt="arrow"></button>
+            </article>
+    
+            <article>
+                <img src="" alt="">
+                <h3 href="https://generatordesign.com/otw_pm_portfolio/tst-air-20th-anniversary/">TST Air 20th Anniversary</h3>
+                <p>We had the opportunity to design and produce a commemorative flyer and logo for our esteemed client, to celebrate their remarkable achievement.</p>
+                <button>see more <img src="" alt="arrow"></button>
+            </article>
+    
+            <article>
+                <img src="" alt="">
+                <h3>Naples Pizza Box Design</h3>
+                <p></p>
+                <button>see more <img src="" alt="arrow"></button>
+            </article>
+        </div>
+
+      </section>
+
+     
+      <section id="services">
+        <div class="service-card">
+            <img class="service-img" src="https://placeimg.com/640/480/any" alt="Background Image">
+            <div class="service-text">
+                <img src="icon.png" alt="Service Icon">
+                <p>Service Description</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img class="service-img" src="https://placeimg.com/640/480/any" alt="Background Image">
+            <div class="service-text">
+                <img src="icon.png" alt="Service Icon">
+                <p>Service Description</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img class="service-img" src="https://placeimg.com/640/480/any" alt="Background Image">
+            <div class="service-text">
+                <img src="icon.png" alt="Service Icon">
+                <p>Service Description</p>
+            </div>
+        </div>
+       
+    </section>
+
+      <div>
+        <!-- Contents-should be in display flex -->
+        <section id="join-our-team">
+            <h2>Join Our Team?</h2>
+            <p class="job-titles">Graphic Designer</p>
+            <p class="job-titles">Front End Devloper</p>
+            <p class="job-titles">Social Media Manager</p>
+            <p class="job-titles">Logo Designer</p>
+        </section>
+
+        <section id="accordion">
+
+        </section>
+      </div>
+
     </main>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47221.30908002239!2d-83.0477537295364!3d42.29278472286768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2b9349dc4c83%3A0x8264a40727b2ffdc!2sGenerator%20Design%20of%20Canada%20Inc.!5e0!3m2!1sen!2sca!4v1687481849201!5m2!1sen!2sca" 
