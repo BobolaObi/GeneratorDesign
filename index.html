@@ -1,71 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="We are a full-service graphic design and advertising agency, offering comprehensive solutions for businesses of all sizes. Our expertise spans across print, web, multimedia, and social media platforms.">
-    <meta name="keywords" content="graphic design, logo design, marketing materials, branding, visual communication">
-    <meta name="author" content="Generator">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We are a full-service graphic design and advertising agency, offering comprehensive solutions for businesses of all sizes. Our expertise spans across print, web, multimedia, and social media platforms."
+    />
+    <meta
+      name="keywords"
+      content="graphic design, logo design, marketing materials, branding, visual communication"
+    />
+    <meta name="author" content="Generator" />
 
     <title>Generator Design</title>
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="./components-css/footer.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="./components-css/footer.css" />
+    <link rel="stylesheet" href="./components-css/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    />
+  </head>
 
-</head>
-
-<body >
+  <body>
     <header>
-        <nav>
-            <!-- Navigation links -->
-        </nav>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="logo.png" class="logo" alt="Company Logo" />
+        </div>
+        <ul class="nav-links">
+          <span class="close">&times;</span>
+          <li><a href="#" class="navbar-link">Home</a></li>
+          <li><a href="#" class="navbar-link">Portfolio</a></li>
+          <li><a href="#" class="navbar-link">Services</a></li>
+          <li><a href="#" class="navbar-link">Blog</a></li>
+          <li><a href="#" class="navbar-link">Generator Cares</a></li>
+          <li><a href="#" class="navbar-link">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <img src="hamburger.png" alt="Menu" />
+        </div>
+      </nav>
     </header>
 
-    <main class="page-container">
-          <!-- Main content of the page -->
+    <main class="page-container" class="page-wrap" >
+      <!-- Main content of the page -->
     </main>
 
-    <footer>
-        <nav class="footer-container">
-            <section class="container">
-                <img src="logo.png" class="logo" alt="Company Logo">
-            </section>
-            <section class="container">
-                <a href="#" class="footer-link">Home</a>
-                <a href="#" class="footer-link">Portfolio</a>
-                <a href="#" class="footer-link">Services</a>
-                <a href="#" class="footer-link">Blog</a>
-                <a href="#" class="footer-link">Generator Cares</a>
-                <a href="#" class="footer-link">Contact Us</a>
-            </section>
-            <div class="container">
-                <p class="bold">Keep in touch</p>
-                <address> 366 Walker Rd</address>
-                <p class="bold">Phone: 519 123-4567</p>
-            </div>
-        </nav>
-     
-
-    
-    </footer>
-    <div class="copyright-strip">
-        <div class="content-container">
-            <div class="text-container">
-                <p>&copy; Generator Design | protected by reCAPTCHA</p>
-                <p><strong><a href="#">Privacy</a> | <a href="#">Terms</a></strong></p>
-            </div>
-            <div class="social-media-container">
-                <!-- Replace # with your actual social media links -->
-                <a href="#"><img src="facebook-logo.png" alt="Facebook"></a>
-                <a href="#"><img src="instagram-logo.png" alt="Instagram"></a>
-                <a href="#"><img src="twitter-logo.png" alt="Twitter"></a>
-                <a href="#"><img src="youtube-logo.png" alt="YouTube"></a>
-                <a href="#"><img src="linkedin-logo.png" alt="LinkedIn"></a>
-                <a href="#"><img src="pinterest-logo.png" alt="Pinterest"></a>
-            </div>
+    <footer class="page-wrap" >
+      <nav class="footer-container">
+        <section class="container">
+          <img src="logo.png" class="logo" alt="Company Logo" />
+        </section>
+        <section class="container">
+          <a href="#" class="footer-link">Home</a>
+          <a href="#" class="footer-link">Portfolio</a>
+          <a href="#" class="footer-link">Services</a>
+          <a href="#" class="footer-link">Blog</a>
+          <a href="#" class="footer-link">Generator Cares</a>
+          <a href="#" class="footer-link">Contact Us</a>
+        </section>
+        <div class="container">
+          <p class="bold">Keep in touch</p>
+          <address>366 Walker Rd</address>
+          <p class="bold">Phone: 519 123-4567</p>
         </div>
-    </div>
-   
-</body>
-</html>
+      </nav>
+    </footer>
 
+    <div class="copyright-strip">
+      <div class="content-container">
+        <div class="text-container">
+          <p>&copy; Generator Design | protected by reCAPTCHA</p>
+          <p>
+            <strong><a href="#">Privacy</a> | <a href="#">Terms</a></strong>
+          </p>
+        </div>
+        <div class="social-media-container">
+          <!-- Replace # with your actual social media links -->
+          <a href="#"><img src="facebook-logo.png" alt="Facebook" /></a>
+          <a href="#"><img src="instagram-logo.png" alt="Instagram" /></a>
+          <a href="#"><img src="twitter-logo.png" alt="Twitter" /></a>
+          <a href="#"><img src="youtube-logo.png" alt="YouTube" /></a>
+          <a href="#"><img src="linkedin-logo.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="pinterest-logo.png" alt="Pinterest" /></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      var navLinks = document.querySelector(".nav-links");
+      var close = document.querySelector(".close");
+      var pageWrap = document.querySelector('.page-wrap');
+      
+
+      hamburger.addEventListener("click", function () {
+        navLinks.style.display =
+          navLinks.style.display === "none" ? "flex" : "none";
+          pageWrap.classList.add('disable-pointer');
+      });
+
+      close.addEventListener("click", function () {
+        navLinks.style.display = "none";
+        pageWrap.classList.remove('disable-pointer');
+      });
+
+      // Add an event listener for window resize
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+          navLinks.style.display = "flex";
+          pageWrap.classList.remove('disable-pointer');
+        } else if (
+          window.innerWidth <= 768 &&
+          navLinks.style.display === "flex"
+
+        ) {
+          navLinks.style.display = "none";
+          pageWrap.classList.remove('disable-pointer');
+        }
+      });
+    </script>
+  </body>
+</html>
