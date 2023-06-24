@@ -1,0 +1,24 @@
+/* Accordion Styles */
+.container h2 {
+    border-bottom: 2px solid black;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+

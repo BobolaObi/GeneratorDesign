@@ -30,3 +30,13 @@ window.addEventListener("resize", function () {
     pageWrap.classList.remove('disable-pointer');
   }
 });
+
+// Accordion Script
+function toggleContent(id) {
+  const content = document.getElementById(id);
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  } 
+}

@@ -138,9 +138,7 @@ table {
 /* Global Styles */
 .page-container {
     max-width: 1200px;
-    /* Can be any value, but 1200px is fairly standard */
     margin: 0 auto;
-    /* Centers the container */
 }
 
 body {
@@ -155,5 +153,3 @@ a {
     color: white;
     text-decoration: none;
 }
-
-

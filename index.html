@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="./components-css/footer.css" />
     <link rel="stylesheet" href="./components-css/header.css" />
     <link rel="stylesheet" href="./components-css/services.css" />
+    <link rel="stylesheet" href="./components-css/accordion.css" />
+    <link rel="stylesheet" href="./components-css/about-us.css" />
+    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
@@ -56,7 +59,7 @@
         <p>At our company, we are passionate about delivering exceptional graphic design services tailored to meet 
             the unique needs of businesses across various industries. With a team of talented and experienced designers, we understand 
             the power of visual communication and its ability to capture attention and resonate with the target audience.</p>
-        <button>Need a Quote?</button>
+        <button>Need a Quote? <img src="/images/Vectorarrow-click.png" alt="arrow-image"></button>
       </section>
 
       <section class="portfolio">
@@ -126,6 +129,38 @@
         </section>
 
         <section id="accordion">
+          <div class="container">
+            <h2>Make a Lasting Impression</h2>
+            <div class="accordion">
+                <h3 class="accordion-header">
+                    <span>Logo Design</span>
+                    <button class="dropdown-btn" onclick="toggleContent('content1')">+</button>
+                </h3>
+                <div class="accordion-content" id="content1">
+                    <p>Details about Logo Design...</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <h3 class="accordion-header">
+                    <span>Web Design</span>
+                    <button class="dropdown-btn" onclick="toggleContent('content2')">+</button>
+                </h3>
+                <div class="accordion-content" id="content2">
+                    <p>Details about Web Design...</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <h3 class="accordion-header">
+                    <span>Brand Identity</span>
+                    <button class="dropdown-btn" onclick="toggleContent('content3')">+</button>
+                </h3>
+                <div class="accordion-content" id="content3">
+                    <p>Details about Brand Identity...</p>
+                </div>
+            </div>
+            <!-- Add more accordions as needed -->
+        </div>
+        
 
         </section>
       </div>
@@ -175,7 +210,5 @@
         </div>
       </div>
     </div>
-
-  
   </body>
 </html>

@@ -1,0 +1,48 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    color: #1E2E5F;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #1E2E5F;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 60vw;
+}
+
+.about-us button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid #1E2E5F;
+    color: #1E2E5F;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.about-us button img {
+    margin-left: 10px;
+    height: 12px;
+}
+
+.about-us button:hover {
+    background: #1E2E5F;
+    color: #fff;
+}
+
+.about-us button:hover img {
+    filter: invert(70%);
+}
