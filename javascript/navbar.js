@@ -16,7 +16,7 @@ close.addEventListener("click", function () {
   pageWrap.classList.remove('disable-pointer');
 });
 
-// Add an event listener for window resize
+// Event listener for window resize
 window.addEventListener("resize", function () {
   if (window.innerWidth > 768) {
     navLinks.style.display = "flex";
@@ -34,9 +34,12 @@ window.addEventListener("resize", function () {
 // Accordion Script
 function toggleContent(id) {
   const content = document.getElementById(id);
+  content.previousElementSibling.classList.toggle('active');
   if (content.style.maxHeight){
     content.style.maxHeight = null;
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
   } 
 }
+
+

@@ -1,24 +1,63 @@
 /* Accordion Styles */
+.container{
+    width: 24vw;
+}
+
 .container h2 {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid #1E2E5F;
+    color: #1E2E5F;
+    padding-bottom: 15px;
+    width: 100%;
 }
 
 .accordion {
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
+    margin-top: 0px; 
+    color: #1E2E5F;
+    width: 100%;
 }
 
 .accordion-header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #1E2E5F;
+    padding-bottom: 10px; 
+    align-items: center;
 }
 
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+}
+
+.accordion-header.active {
+    border-bottom: 0;
+    transition: border-bottom 0.3s ease-out;
+}
+
+img {
+    width: 25px;
 }
 
 
+ /* Mobile view */
+ @media screen and (max-width: 992px) {
+    .container{
+        width: 80vw;
+        text-align: left;
+    }
+}
+
+ @media screen and (max-width: 768px) {
+    .container{
+        width: 80vw;
+        text-align: left;
+    }
+    
+  }
+  
