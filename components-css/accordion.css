@@ -32,7 +32,7 @@
     transition: max-height 0.3s ease-in-out;
     margin-top: 10px;
     margin-bottom: 20px;
-    padding-bottom: 2px;
+    padding-bottom: 1.6px;
 }
 
 .accordion-header.active {
@@ -43,7 +43,6 @@
 img {
     width: 25px;
 }
-
 
  /* Mobile view */
  @media screen and (max-width: 992px) {
