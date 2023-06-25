@@ -69,6 +69,7 @@
       background: #212121;
       top: 0;
       left: 0;
+      z-index: 1;
     }
     
     .navbar-link {
@@ -80,10 +81,13 @@
     .hamburger {
       display: block; 
       margin-left: auto; 
+
     }
 
     .close {
         display: block;
+        z-index: 1;
+        margin: 5%;
     }
   }
   

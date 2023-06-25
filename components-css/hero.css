@@ -1,0 +1,68 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #1E2E5F url('/images/generator-hero-image.png') no-repeat;
+    background-position: right bottom;
+    background-size: 90vh;
+    height: 600px; 
+    color: #ffffff;
+    padding: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    margin-bottom: 40px;
+}
+
+
+
+.hero h1 {
+    font-size: 4em; 
+    margin-left: 40px;
+    margin-bottom: 20px;
+    animation: slidein 0.4s;
+
+}
+
+.hero p {
+    font-size: 1.5em; 
+    margin-left: 40px;
+    animation: slidein 1s;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        align-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        background-size: 600px;
+        background-position:  bottom;
+        background-position-y: 295px;
+        height: 720px; 
+        
+    }
+
+    .hero h1 {
+        margin-bottom: 40px; 
+        font-size: 3em; 
+        margin-top: -360px;
+        text-align: left;
+        font-weight: bolder;
+        width: 80vw;
+    }
+
+    .hero p {
+        font-size: 1em; 
+        text-align: left;
+        width: 80vw;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-right: 80px;
+    
+    }
+
+    to {
+        margin-left: 40px;
+    }
+}
