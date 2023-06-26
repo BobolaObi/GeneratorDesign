@@ -7,7 +7,8 @@
     color: #fff;
     padding: 40px;
     padding-top: 60px;
-    width: 290px; 
+    width: 100%; 
+    max-width: 280px;
     margin-right: 50px;
 }
 
@@ -29,6 +30,8 @@
     #join-our-team {
         margin-bottom: 50px;
         margin-right: 0px;
+        width: 80%;
+        padding: 30px;
     }
 }
 
@@ -37,6 +40,7 @@
     #join-our-team {
         margin-bottom: 50px;
         margin-right: 0px;
+        width: 100%;
+        padding: 30px;
     }
-  }
-  
+}
