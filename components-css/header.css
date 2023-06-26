@@ -5,6 +5,7 @@
     background: #212121;
     color: #fff;
     padding: 15px;
+    overflow: hidden;
   }
 
   .navbar::after {

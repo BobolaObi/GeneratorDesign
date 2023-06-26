@@ -7,6 +7,7 @@
     color: #1E2E5F;
     text-align: left;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 #portfolio-pieces {
@@ -33,6 +34,7 @@
 
 #portfolio-pieces article h5 {
     margin: 20px 0;
+    text-align: center;
 }
 
 #portfolio-pieces article p {

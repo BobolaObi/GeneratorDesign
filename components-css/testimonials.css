@@ -1,4 +1,5 @@
 #testimonials-container {
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,27 +16,22 @@
 
 .testimonials {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%; 
-    overflow-x: scroll;
     gap: 40px;
     padding-bottom: 20px;
 }
 
 .testimonial {
-    min-width: 600px;
-    padding: 100px;
+    width: 100%;
+    max-width: 600px;
+    padding: 10git0px;
     background-color: #1E2E5F;
     color: #ffffff;
     font-style: italic;
     text-align: center;
-}
-
-.testimonials::-webkit-scrollbar {
-    height: 5px;
-}
-
-.testimonials::-webkit-scrollbar-thumb {
-    background: #1E2E5F;
 }
 
 blockquote {
@@ -50,7 +46,6 @@ cite {
 
 @media screen and (max-width: 768px) {
     .testimonial {
-        min-width: 100%;
-        padding: 30px;
+        padding: 80px;
     }
 }
