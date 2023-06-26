@@ -5,16 +5,15 @@
     justify-content: center;
     text-align: center;
     padding: 20px;
+    margin-bottom: 40px;
 }
 
-.about-us h2 {
-    font-size: 24px;
+.about-us h4 {
     color: #1E2E5F;
     margin-bottom: 20px;
 }
 
 .about-us p {
-    font-size: 16px;
     color: #1E2E5F;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -28,8 +27,7 @@
     background: #fff;
     border: 2px solid #1E2E5F;
     color: #1E2E5F;
-    font-size: 16px;
-    padding: 10px 20px;
+    padding: 12px 20px;
     cursor: pointer;
 }
 

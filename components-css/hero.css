@@ -5,18 +5,16 @@
     justify-content: center;
     background: #1E2E5F url('/images/generator-hero-image.png') no-repeat;
     background-position: right bottom;
-    background-size: 90vh;
+    background-size: 80vh;
     height: 600px; 
     color: #ffffff;
-    padding: 20px;
+    padding: 0 40px;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     margin-bottom: 40px;
 }
 
 
-
 .hero h1 {
-    font-size: 4em; 
     margin-left: 40px;
     margin-bottom: 20px;
     animation: slidein 0.4s;
@@ -24,7 +22,7 @@
 }
 
 .hero p {
-    font-size: 1.5em; 
+    font-size: 1em; 
     margin-left: 40px;
     animation: slidein 1s;
 }
@@ -54,6 +52,7 @@
         text-align: left;
         width: 80vw;
     }
+
 }
 
 @keyframes slidein {

@@ -6,6 +6,7 @@
     padding: 20px;
     color: #1E2E5F;
     text-align: left;
+    margin-bottom: 40px;
 }
 
 #portfolio-pieces {
@@ -20,6 +21,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 300px;
+    margin-bottom: 25px;
 }
 
 #portfolio-pieces article img {
@@ -29,7 +31,7 @@
     background: #1E2E5F;
 }
 
-#portfolio-pieces article h3 {
+#portfolio-pieces article h5 {
     margin: 20px 0;
 }
 
@@ -60,7 +62,3 @@
     background: none;
 }
 
-h2 {
-    margin-bottom: 30px;
-    font-size: 24px;
-}

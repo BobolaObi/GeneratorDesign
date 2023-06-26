@@ -18,6 +18,10 @@
     width: 100%;
 }
 
+.accordion h6 {
+    font-weight: bolder;
+}
+
 .accordion-header {
     display: flex;
     justify-content: space-between;
