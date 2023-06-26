@@ -33,11 +33,6 @@
     text-decoration: none;
   }
   
-  .logo .navbar {
-    width: 50px;
-    height: auto;
-  }
-  
   .hamburger {
     display: none; 
   }
@@ -49,6 +44,10 @@
     font-size: 2em;
     cursor: pointer;
     display: none; 
+  }
+
+  img[alt="generator-nav-logo"]{
+    width: 100%;
   }
   
   /* Mobile view */

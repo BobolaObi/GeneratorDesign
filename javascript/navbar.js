@@ -24,24 +24,10 @@ window.addEventListener("resize", function () {
   } else if (
     window.innerWidth <= 768 &&
     navLinks.style.display === "flex"
-    
-
   ) {
     navLinks.style.display = "none";
     pageWrap.classList.remove('disable-pointer');
   }
 });
-
-
-// Accordion Script
-function toggleContent(id) {
-  const content = document.getElementById(id);
-  content.previousElementSibling.classList.toggle('active');
-  if (content.style.maxHeight){
-    content.style.maxHeight = null;
-  } else {
-    content.style.maxHeight = content.scrollHeight + "px";
-  } 
-}
 
 
