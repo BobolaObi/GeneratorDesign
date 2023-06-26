@@ -147,8 +147,12 @@ body {
 
 .bold {
     font-weight: bold;
+    font-size: 1em;
 }
 
+address{
+    font-size: 0.875em;
+}
 
 /* Flex container for Accordion & Career Card */
 #team-accordion {
