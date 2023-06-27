@@ -3,22 +3,28 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: #1E2E5F url('../images/generator-hero-image.png') no-repeat;
-    background-position: right bottom;
-    background-size: 80vh;
+    background-color: #1E2E5F;
     height: 600px; 
     color: #ffffff;
     padding: 0 40px;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     margin-bottom: 40px;
+    position: relative; 
 }
 
+.hero-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80vh;
+    object-fit: cover; 
+    z-index: -1; 
+}
 
 .hero h1 {
     margin-left: 40px;
     margin-bottom: 20px;
     animation: slidein 0.4s;
-
 }
 
 .hero p {
@@ -27,41 +33,55 @@
     animation: slidein 1s;
 }
 
+
 @media screen and (max-width: 768px) {
     .hero {
-        align-items: center;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        background-size: 600px;
-        background-position:  bottom;
-        background-position-y: 295px;
-        height: 720px; 
-        
+        align-items: flex-start;  
+        justify-content: center; 
+        height: 580px; 
+        padding: 40px 0; 
+        clip-path: none; 
+        text-align: left;
+        overflow: hidden;
     }
 
     .hero h1 {
-        margin-bottom: 40px; 
         font-size: 3em; 
-        margin-top: -360px;
-        text-align: left;
+        margin-top: 0; 
+        text-align: left; 
         font-weight: bolder;
         width: 80vw;
+        z-index: 0;
+        margin-top: -300px;
     }
 
     .hero p {
         font-size: 1em; 
-        text-align: left;
         width: 80vw;
+        z-index: 0;
+        text-align: left;
     }
 
+    .hero-image {
+        position: absolute;
+        right: 0;
+        left: -60px; 
+        bottom: 0;
+        width: 120%;  
+        object-fit: contain; 
+        z-index: 0;
+      
+    }
 }
 
 @keyframes slidein {
     from {
         margin-right: 80px;
-    
     }
 
     to {
         margin-left: 40px;
     }
 }
+
+
