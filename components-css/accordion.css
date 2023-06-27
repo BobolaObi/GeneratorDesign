@@ -1,6 +1,6 @@
 /* Accordion Styles */
 .container{
-    width: 24vw;
+    width: 100%;
 }
 
 .container h2 {
@@ -53,6 +53,7 @@ img {
     .container{
         width: 80vw;
         text-align: left;
+        
     }
 }
 
