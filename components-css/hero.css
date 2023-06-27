@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: #1E2E5F url('/images/generator-hero-image.png') no-repeat;
+    background: #1E2E5F url('../images/generator-hero-image.png') no-repeat;
     background-position: right bottom;
     background-size: 80vh;
     height: 600px; 
