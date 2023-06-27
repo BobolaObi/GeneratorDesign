@@ -69,12 +69,19 @@ footer {
 
 /* Copyright Strip Styles */
 
+strong a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
 .copyright-strip {
     background: #212121;
     padding: 30px;
     color: white;
     display: flex;
     flex-direction: column;
+    
 }
 
 .content-container {
@@ -83,11 +90,20 @@ footer {
     flex-direction: column-reverse;
 }
 
-.text-container,
-.social-media-container {
+.text-container
+{
     display: flex;
     flex-direction: column;
     align-items: start;
+    font-weight: 100;
+}
+
+.social-media-container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+
 }
 
 .social-media-container img {
