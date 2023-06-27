@@ -33,6 +33,11 @@
     animation: slidein 1s;
 }
 
+.hero h1,
+.hero p {
+    transform: translateX(0px);
+}
+
 
 @media screen and (max-width: 768px) {
     .hero {
@@ -76,11 +81,11 @@
 
 @keyframes slidein {
     from {
-        margin-right: 80px;
+        transform: translateX(80px);
     }
 
     to {
-        margin-left: 40px;
+        transform: translateX(0);
     }
 }
 
